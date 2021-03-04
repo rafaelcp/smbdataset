@@ -1,6 +1,8 @@
 # smbdataset
 Super Mario Bros. (NES) gameplay dataset for machine learning.
 
+While I don't upload it here, you can download it from here: https://drive.google.com/file/d/1htB9qCxbeD2xCHqtzCt3ITFdd1CDrWjl/view?usp=sharing
+
 ## Features
 - 256x240 8bit indexed PNG images with RAM snapshot into metadata
 - 256 actions (all possible NES controler input combinations, including START and SELECT), stored as an integer on each PNG metadata
