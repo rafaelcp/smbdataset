@@ -1,4 +1,4 @@
-# smbdataset
+# Super Mario Bros. Gameplay Dataset
 Super Mario Bros. (NES) gameplay dataset for machine learning.
 
 While I don't upload it here, you can download it from here: https://drive.google.com/file/d/1htB9qCxbeD2xCHqtzCt3ITFdd1CDrWjl/view?usp=sharing
