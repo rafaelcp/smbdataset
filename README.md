@@ -43,3 +43,16 @@ The PNG format supports metadata <a href="https://www.w3.org/TR/PNG-Chunks.html"
 #### Useful References for Reading PNG Chunks
 - https://pypng.readthedocs.io/
 - https://stackoverflow.com/questions/48631908/python-extract-metadata-from-png
+
+## How to Cite
+
+<pre>
+@misc{Pinto2021,
+  author = {Pinto, R.C.},
+  title = {Super Mario Bros. Gameplay Dataset},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/rafaelcp/smbdataset}}
+}
+</pre>
