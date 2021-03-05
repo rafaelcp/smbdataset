@@ -1,6 +1,8 @@
 # Super Mario Bros. Gameplay Dataset
 Super Mario Bros. (NES) gameplay dataset for machine learning.
 
+Just in case you have any issues downloading the dataset directly from GitHub, here is a link from Google Drive: https://drive.google.com/file/d/1htB9qCxbeD2xCHqtzCt3ITFdd1CDrWjl/view?usp=sharing
+
 ## Features
 - 256x240 8bit indexed PNG images with RAM snapshot into metadata
 - 256 actions (all possible NES controler input combinations, including START and SELECT), stored as an integer on each PNG metadata
