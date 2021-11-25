@@ -5,7 +5,7 @@ Just in case you have any issues downloading the dataset directly from GitHub, h
 
 ## Features
 - 256x240 8bit indexed PNG images with RAM snapshot into metadata
-- 256 actions (all possible NES controler input combinations, including START and SELECT), stored as an integer on each PNG metadata
+- 256 actions (all possible NES controler input combinations, including START and SELECT), stored as an integer on each PNG metadata and in its own filename
 - 737,134 frames
 - 32 levels (normal mode)
 - 141 wins + 139 failures = 280 episodes
@@ -19,17 +19,17 @@ Just in case you have any issues downloading the dataset directly from GitHub, h
 Each PNG contains relevant information in its name itself and in its metadata.
 
 ### Filename Format
-Folder: &lt;name>_&lt;SESSID>_e&lt;episode>_WORLD-LEVEL_&lt;outcome> 
+Folder: &lt;user>\_&lt;SESSID>\_e&lt;episode>\_&lt;world>-&lt;level>\_&lt;outcome> 
 
-Frame: &lt;name>_&lt;SESSID>_e&lt;episode>_WORLD-LEVEL_f&lt;frame>_a&lt;action>_&lt;datetime>.&lt;outcome>.png
+Frame: &lt;user>\_&lt;SESSID>\_e&lt;episode>\_&lt;world>-&lt;level>\_f&lt;frame>\_a&lt;action>\_&lt;datetime>.&lt;outcome>.png
 
-- name: The logged user who recorded that gameplay. Currently there is only 1 player (me: Rafael);
+- user: The logged user who recorded that gameplay. Currently there is only 1 player (me: Rafael);
 - SESSID: Session ID. Just to differentiate between different gameplay sessions;
 - episode: Episode number in current session. An episode is 1 level, be it a completion or a failed (death) run;
 - WORLD: Current world from 1 to 8;
 - LEVEL: Current level from 1 to 4;
 - frame: Frame number in a single episode / run (starting from 1);
-- action: An 8 bit integer from 0 to 255. Each bit corresponds to a button in the following order (from MSB to LSB): up, down, left, right, A, B, start, select;
+- action: An 8 bit integer from 0 to 255. Each bit corresponds to a button in the following order (from MSB to LSB): up, down, left, right, A, B, start, select, e.g.: 20dec = 00010100bin = right + B (running to the right)
 - datetime: Date and time the frame was captured (YYYY-MM-DD_HH-mm-SS);
 - outcome: Does this folder / frame corresponds to a completion (win) or a failed / death (fail) run / episode?
 
