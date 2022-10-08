@@ -1,4 +1,4 @@
---Collects data from SMB gameplay for machine learning experiments
+--Collects data from SMB gameplay for machine learning experiments. Just Load this Lua script into FCEUX emulator with a SMB ROM and play the game normally.
 
 require "os"
 local bit = require("bit")
