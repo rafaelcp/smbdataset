@@ -29,7 +29,13 @@ Frame: &lt;user>\_&lt;sessid>\_e&lt;episode>\_&lt;world>-&lt;level>\_f&lt;frame>
 - world: Current world from 1 to 8;
 - level: Current level from 1 to 4;
 - frame: Frame number in a single episode / run (starting from 1);
-- action: An 8 bit integer from 0 to 255. Each bit corresponds to a button in the following order (from MSB to LSB): up, down, left, right, A, B, start, select, e.g.: 20dec = 00010100bin = right + B (running to the right)
+- action: An 8 bit integer from 0 to 255. Each bit corresponds to a button in the following order (from MSB to LSB): A, up, left, B, start, right, down, select, e.g.: 20dec = 00010100bin = right + B (running to the right), 148dec = 10010100bin = jump + right + B (running jump to the right), etc...
+  * down = 2 (when you enter a pipe)
+  * right = 4
+  * B = 16 (run and/or fire)
+  * left = 32
+  * up = 64 (climb)
+  * A = 128 (jump)
 - datetime: Date and time the frame was captured (YYYY-MM-DD_HH-mm-SS);
 - outcome: Does this folder / frame corresponds to a completion (win) or a failed / death (fail) run / episode?
 
