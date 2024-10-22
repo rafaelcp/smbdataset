@@ -42,7 +42,7 @@ Frame: &lt;user>\_&lt;sessid>\_e&lt;episode>\_&lt;world>-&lt;level>\_f&lt;frame>
 ### PNG Metadata Format
 The PNG format supports metadata <a href="https://www.w3.org/TR/PNG-Chunks.html">chunks</a> after the IEND token. After each chunk token there is a \0 and then the corresponding data. We use 3 custom chunks for storing game data inside the image:
 
-- tEXtRAM: RAM snapshot at that frame, consisting of 2048 bytes;
+- tEXtRAM: RAM snapshot at that frame, consisting of 2048 bytes (there is a [bug](https://github.com/rafaelcp/smbdataset/issues/4#issue-2603161237) in the data collector that adds unintended bytes to the RAM, the solution for reading this correctly is in the linked issue)
 - tEXtBP1: Player 1 input buttons at that frame, same format as in the filename (1 byte);
 - tEXtOUTCOME: Does this frame corresponds to a completion (win) or a failed / death (fail) run / episode? fail = 1, win =2 (1 byte).
 
