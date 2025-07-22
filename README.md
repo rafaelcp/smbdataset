@@ -1,7 +1,8 @@
 # Super Mario Bros. Gameplay Dataset
 Super Mario Bros. (NES) gameplay dataset for machine learning.
 
-Just in case you have any issues downloading the dataset directly from GitHub, here is a link from Google Drive: https://drive.google.com/file/d/1htB9qCxbeD2xCHqtzCt3ITFdd1CDrWjl/view?usp=sharing
+Just in case you have any issues downloading the dataset directly from GitHub, here is a link from Google Drive: [https://drive.google.com/file/d/1pwGtBVbS_wCYjrKS228YKh_i1pcyHbgg/view?usp=sharing
+](https://drive.google.com/file/d/1pwGtBVbS_wCYjrKS228YKh_i1pcyHbgg/view?usp=sharing)
 
 ## Features
 - 256x240 8bit indexed PNG images with RAM snapshot into metadata
@@ -44,7 +45,7 @@ The PNG format supports metadata <a href="https://www.w3.org/TR/PNG-Chunks.html"
 
 - tEXtRAM: RAM snapshot at that frame, consisting of 2048 bytes (there is a [bug](https://github.com/rafaelcp/smbdataset/issues/4#issue-2603161237) in the data collector that adds unintended bytes to the RAM, the solution for reading this correctly is in the linked issue)
 - tEXtBP1: Player 1 input buttons at that frame, same format as in the filename (1 byte);
-- tEXtOUTCOME: Does this frame corresponds to a completion (win) or a failed / death (fail) run / episode? fail = 1, win =2 (1 byte).
+- tEXtOUTCOME: Does this frame correspond to a completion (win) or a failed / death (fail) run / episode? fail = 1, win =2 (1 byte).
 
 #### Useful References for Reading PNG Chunks
 - https://pypng.readthedocs.io/
